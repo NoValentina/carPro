@@ -1,0 +1,35 @@
+
+.introduction {
+  display: flex;
+  background-image: url('../images/photo1.jpg');
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.introduction_header {
+  margin: 0;
+  padding: 80px;
+  color: white;
+  font-size: 150px;
+  font-family: 'Niconne', cursive;
+}
+
+.introduction_btn {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: transparent;
+  font-family: 'Niconne', cursive;
+  border: none;
+  color: white;
+  width: 200px;
+  align-self: center;
+  outline: none;
+  border-radius: 50%;
+}
+
+.introduction_btn:active {
+  border: 1px white solid;
+}
