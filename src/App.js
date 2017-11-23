@@ -7,11 +7,19 @@ import Search from './search';
 // import Cards from './cards';
 
 class App extends Component {
+  state = {
+    isVisible: false,
+  }
+
+  find = () => {
+    this.setState({isVisible: true });
+  }
+
   render() {
     return (
       <div className="app">
-        <Introduction />
-        <Search />
+        <Introduction findAuto={this.find}/>
+        {this.state.isVisible && <Search />}
         {/* <Cards /> */}
       </div>
     );
