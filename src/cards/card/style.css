@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title .card_price .card_time {
+  font-size: 14px;
+  color: black;
+}
+
+.card_properties {
+  display: flex;
+  flex-direction: row;
+}

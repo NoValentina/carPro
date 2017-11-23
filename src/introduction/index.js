@@ -6,8 +6,10 @@ class Introduction extends Component {
   render() {
     return (
       <div className="introduction">
-        <h1 className="introduction_header">fireCare</h1>
-        <button className="introduction_btn">Начать поиск</button>
+        <div className="layer">
+          <h1 className="introduction_header">fireCar</h1>
+          <button className="introduction_btn">Начать поиск</button>
+        </div>
       </div>
     )
   }
