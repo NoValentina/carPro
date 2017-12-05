@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
-import './App.css';
-
 import Introduction from './introduction';
 import Search from './search';
-// import Cards from './cards';
+import Cards from './cards';
+
+import './App.css';
+
+const image = require('./images/photo5.png');
 
 class App extends Component {
   state = {
@@ -17,10 +19,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="app">
-        <Introduction findAuto={this.find}/>
+      <div className="section_intro">
+        <div className="layer">
+        <Introduction isSearchVisible={this.state.isVisible} findAuto={this.find}/>
         {this.state.isVisible && <Search />}
-        {/* <Cards /> */}
+        {this.state.isVisible && <Cards />}
+        </div>
       </div>
     );
   }

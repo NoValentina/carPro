@@ -3,15 +3,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FFF0F5;
-  padding: 100px;
+  background-color: transparent;
+  margin-bottom: 10px;
 }
 
 .searchEnter {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color:
 }
 
 .searchInput {
